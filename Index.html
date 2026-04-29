@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Constructora Valcron | Construcción y Mantenimiento</title>
+    <!-- Google Fonts & Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- CSS Principal -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- HEADER con menú hamburguesa -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                <img src="img/Fondo de log eliminado.png" alt="Logo Constructora Valcron" class="logo-img" onerror="this.src='https://placehold.co/200x60?text=Valcron'"></a>
+                <span class="logo-text">Constructora Valcron</span>
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                    <li><a href="#galeria" class="nav-link">Galería</a></li>
+                    <li><a href="#mision-vision" class="nav-link">Misión & Visión</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="inicio" class="hero">
+            <div class="container hero-content">
+                <h1>Construimos tus ideas con calidad y precisión</h1>
+                <p>Obra gris, metales, cercas eléctricas, mantenimiento general, jardinería y más. Expertos en condominios, empresas e instituciones.</p>
+                <a href="#contacto" class="btn-primary">Solicitar Cotización <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </section>
+
+        <!-- Servicios Destacados -->
+        <section id="servicios" class="services">
+            <div class="container">
+                <h2 class="section-title">Nuestros Servicios</h2>
+                <div class="services-grid">
+                    <div class="service-card"><i class="fas fa-hard-hat"></i><h3>Obra Gris & Metales</h3><p>Construcción de estructuras, columnas, vigas y trabajos en acero.</p></div>
+                    <div class="service-card"><i class="fas fa-bolt"></i><h3>Cerca Eléctrica</h3><p>Instalación y mantenimiento de cercas eléctricas perimetrales.</p></div>
+                    <div class="service-card"><i class="fas fa-building"></i><h3>Mantenimiento General</h3><p>Para condominios, empresas e instituciones. Reparaciones integrales.</p></div>
+                    <div class="service-card"><i class="fas fa-leaf"></i><h3>Jardinería & Poda</h3><p>Diseño, mantenimiento de áreas verdes y poda de árboles profesionales.</p></div>
+                </div>
+            </div>
+        </section>
+
+       <!-- GALERÍA FIJA CON 4 IMÁGENES -->
+<section id="galeria" class="gallery-section">
+    <div class="container">
+        <h2 class="section-title">Galería de Proyectos</h2>
+        <p class="gallery-subtitle">Conoce algunos de nuestros trabajos realizados</p>
+        
+        <div class="gallery-grid">
+            <!-- IMAGEN 1 - Obra Gris -->
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=400&h=300&fit=crop" alt="Estructura metálica">
+                <div class="gallery-info">
+                    <h4>Estructura metálica industrial</h4>
+                    <span class="service-tag">Obra Gris & Metales</span>
+                </div>
+            </div>
+            <!-- IMAGEN 2 - Cerca Eléctrica -->
+            <div class="gallery-item">
+                <img src="img/cerca.jpg" alt="Cerca eléctrica perimetral">
+                <div class="gallery-info">
+                    <h4>Instalación de cerca eléctrica</h4>
+                    <span class="service-tag">Cerca Eléctrica</span>
+                </div>
+            </div>
+            <!-- IMAGEN 3 - Mantenimiento General -->
+            <div class="gallery-item">
+                <img src="img/mantenimiento.jpg" alt="Mantenimiento en condominio">
+                <div class="gallery-info">
+                    <h4>Mantenimiento integral en condominio</h4>
+                    <span class="service-tag">Mantenimiento General</span>
+                </div>
+            </div>
+            <!-- IMAGEN 4 - Jardinería y Poda -->
+            <div class="gallery-item">
+                <img src="img/jardin.jpg" alt="Jardinería y poda">
+                <div class="gallery-info">
+                    <h4>Diseño de jardines y poda profesional</h4>
+                    <span class="service-tag">Jardinería & Poda</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+                <!-- Grid de galería dinámica -->
+                <div class="gallery-grid" id="galleryGrid">
+                    <!-- Las imágenes de ejemplo se cargarán desde JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Misión y Visión -->
+        <section id="mision-vision" class="mission-vision">
+            <div class="container mv-container">
+                <div class="mv-card">
+                    <i class="fas fa-bullseye"></i>
+                    <h3>Misión</h3>
+                    <p>Brindar servicios de construcción de alta calidad, cumpliendo con los requerimientos de nuestros clientes mediante el uso de tecnología, talento humano calificado y procesos eficientes, garantizando seguridad, cumplimiento y sostenibilidad.</p>
+                </div>
+                <div class="mv-card">
+                    <i class="fas fa-eye"></i>
+                    <h3>Visión</h3>
+                    <p>Ser una empresa líder en el sector de la construcción, reconocida por la excelencia en nuestros proyectos, innovación constante y compromiso con el desarrollo sostenible y el bienestar de la sociedad.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mapa y Contacto -->
+        <section id="contacto" class="contact-section">
+            <div class="container contact-container">
+                <div class="contact-info">
+                    <h2>Contáctanos</h2>
+                    <p><i class="fas fa-phone-alt"></i> <strong>Teléfonos:</strong> <a href="tel:71210898">7121-0898</a> / <a href="tel:64625908">6462-5908</a></p>
+                    <p><i class="fab fa-whatsapp"></i> <strong>WhatsApp:</strong> <a href="https://wa.me/50671210898?text=Hola%20Valcron,%20necesito%20información%20sobre%20sus%20servicios" target="_blank">+506 7121-0898</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> <strong>Ubicación:</strong> Heredia Centro, Costa Rica</p>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.092807764349!2d-84.1172747244966!3d10.002954773538828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0fbd4b7d0a4f1%3A0x9b1e5b3c6e2a8f5d!2sHeredia%20Centro%2C%20Provincia%20de%20Heredia!5e0!3m2!1ses!2scr!4v1712345678901!5m2!1ses!2scr" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Envíanos un mensaje</h3>
+                    <form id="contactForm">
+                        <input type="text" placeholder="Nombre completo" required>
+                        <input type="email" placeholder="Correo electrónico" required>
+                        <textarea rows="4" placeholder="¿En qué servicio estás interesado?"></textarea>
+                        <button type="submit" class="btn-primary">Enviar mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer con WhatsApp fijo -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2025 Constructora Valcron - Calidad y compromiso en cada proyecto.</p>
+            <div class="social-links">
+                <a href="https://wa.me/50671210898?text=Hola%20Valcron,%20deseo%20información" class="whatsapp-icon" target="_blank" aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp"></i> Escríbenos
+                </a>
+                <a href="https://wa.me/50664625908?text=Hola%20Valcron,%20contacto%20por%20obra" class="whatsapp-icon secondary" target="_blank" aria-label="WhatsApp Alternativo">
+                    <i class="fab fa-whatsapp"></i> +506 6462-5908
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
